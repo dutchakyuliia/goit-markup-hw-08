@@ -1,0 +1,30 @@
+.section-clients {
+  background-color: $backgroud-color;
+}
+
+.section-clients__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}
+
+.section-clients__link {
+  @include centeredFlex();
+  justify-content: center;
+  text-align: center;
+  width: 170px;
+  height: 92px;
+  color: $icon-fill;
+  border: 1px solid $icon-fill;
+  border-radius: 4px;
+  transition: color 250ms $timing-function, border 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color-blue;
+    border: 1px solid $accent-color-blue;
+  }
+}
+
+.section-clients__icon {
+  fill: currentColor;
+}

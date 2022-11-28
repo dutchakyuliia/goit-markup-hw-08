@@ -1,0 +1,25 @@
+
+.section-occupation__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-occupation__item {
+  position: relative;
+}
+
+.section-occupation__item-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $accent-color-white;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+}

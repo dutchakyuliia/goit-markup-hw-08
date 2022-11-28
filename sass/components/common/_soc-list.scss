@@ -1,0 +1,26 @@
+.soc-list {
+  @extend %list;
+  display: flex;
+  gap: 10px;
+}
+
+.soc-list__icon-box {
+  display: block;
+  color: $icon-fill;
+  width: 44px;
+  height: 44px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 50%;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+  &:hover,
+  &focus {
+    background-color: $accent-color-blue;
+    color: $accent-color-white;
+  }
+}
+
+.soc-list__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,110 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.address-wrap {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  color: $accent-color-white;
+}
+
+.address {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: $accent-color-white;
+}
+
+.address__place {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $accent-color-white;
+  text-decoration: none;
+}
+
+.address__mail {
+  @extend %address;
+  margin-bottom: 9px;
+}
+
+.address__tel {
+  @extend %address;
+}
+
+.join-us__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $accent-color-white;
+}
+
+.join-us__soc-list {
+  margin-right: 93px;
+}
+
+.soc-list__icon-box--background {
+  color: $accent-color-white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form-subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $accent-color-white;
+}
+
+.form-subscribe__wrap {
+  display: flex;
+}
+
+.form-subscribe__input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  transition: outline 250ms $timing-function;
+  &::placeholder {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus-within {
+    outline: 1px solid #2196f3;
+  }
+}
+
+.button--subscribe {
+  width: 200px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid $accent-color-blue;
+  padding: 10px 28px;
+}

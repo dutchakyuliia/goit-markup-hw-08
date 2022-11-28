@@ -1,0 +1,28 @@
+//* utils
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/global-styles";
+
+//*common
+@import "./components/common/logo";
+@import "./components/common/soc-list";
+
+//*page-header
+@import "./components/page-header";
+
+//*main
+@import "./components/main-index/section-hero";
+@import "./components/main-index/section-features";
+@import "./components/main-index/section-occupation";
+@import "./components/main-index/section-team";
+@import "./components/main-index/section-clients";
+
+//*footer
+@import "./components/footer";
+
+//*backdrop
+@import "./components/backdrop";
+
+//*portfolio
+@import "./components/section-portfolio";

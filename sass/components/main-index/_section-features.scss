@@ -1,0 +1,28 @@
+.section-features {
+  padding-bottom: 0;
+}
+
+.card-set {
+  display: flex;
+  gap: 30px;
+  @extend %list;
+}
+
+.card-set__icon-box {
+  @include centeredFlex();
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.card-set__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-text-color;
+  text-transform: uppercase;
+}
