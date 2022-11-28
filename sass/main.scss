@@ -2,9 +2,10 @@
 @import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
-@import "./utils/global-styles";
+
 
 //*common
+@import "./components/common/global-styles";
 @import "./components/common/logo";
 @import "./components/common/soc-list";
 

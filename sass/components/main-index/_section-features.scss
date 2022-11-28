@@ -3,20 +3,37 @@
 }
 
 .card-set {
-  display: flex;
-  gap: 30px;
   @extend %list;
+  @media screen and (min-width: 768px) { 
+    display: flex;
+  gap: 30px;} 
+ 
+  
 }
+.card-set__card{
+  @media screen and (max-width: 767px){
+  &:not(:last-child){
+  margin-bottom: 30px;
+}  
+  }
 
+}
 .card-set__icon-box {
-  @include centeredFlex();
-  justify-content: center;
-  width: 270px;
   height: 120px;
   text-align: center;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px){
+   @include centeredFlex();
+  width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+@include centeredFlex();
+  width: 270px; 
+  }
 }
 
 .card-set__title {
@@ -25,4 +42,10 @@
   line-height: 1.14;
   color: $title-text-color;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.card-set__text {
+
 }

@@ -1,21 +1,29 @@
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-// .page-header__container {
-//   @media screen and (min-width: 768px ) and (max-width: 1200px) {
-//     @include centeredFlex();
-//   }
-// }
+.page-header__container {
+  @media screen and (max-width: 767px){
+  padding-top: 16px;
+  padding-bottom: 16px;} 
+  @media screen and (min-width: 768px)  {
+    @include centeredFlex();
+    padding-top: 0;
+    padding-bottom: 0;
+    
+  }
+}
 
 .page-header__logo {
-  margin-right: 93px;
+ 
+  @media screen and (min-width: 768px) {
+  margin-right: 93px;}
 }
 
 .logo__part {
   color: $accent-color-blue;
 }
 .nav-container {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -25,11 +33,9 @@
 
 .nav {
   @extend %list;
-
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
@@ -68,10 +74,9 @@
 }
 
 .contact {
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
