@@ -5,6 +5,8 @@
 }
 
 .soc-list__icon-box {
+   width: 44px;
+  height: 44px;
   display: block;
   color: $icon-fill;
   padding: 12px 0;
@@ -22,12 +24,10 @@
 
 .soc-list__icon {
   @media screen and (max-width: 767px) {
-    width: 20px;
-    height: 20px;
+    
   }
   @media screen and (min-width: 768px) {
-    width: 44px;
-  height: 44px;
+   
   }
   fill: currentColor;
 }

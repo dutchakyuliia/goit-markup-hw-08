@@ -7,11 +7,10 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  
 }
 .section-clients__item {
  @media screen and (max-width: 767px) {
-    width: calc((100% - 30px) / 2 );
+    flex-basis: calc((100% - 30px) / 2 );
   } 
 }
 .section-clients__link {

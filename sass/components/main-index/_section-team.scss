@@ -14,8 +14,8 @@
 .team-set__item{
   margin: 0 auto;
 @media screen and (max-width: 1199px) {
-  &:not(:last-child){
-    width: 450px;
+ width: 100%; 
+ &:not(:last-child){
     margin-bottom: 30px;
   }
 }
@@ -36,7 +36,8 @@
   line-height: 1.19;
   color: $title-text-color;
   text-align: center;
-}
+
+ }
 
 .team-set__work-title {
   margin-bottom: 16px;
@@ -48,5 +49,7 @@
 
 .team-set__soc-list {
   text-align: center;
-  padding: 0 32px 30px 32px;
+  display: flex;
+  justify-content: center;
+ padding-bottom: 30px;
 }
