@@ -44,11 +44,8 @@
     &:focus {
       color: $accent-color-blue;
     }
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-    
-     & .icon-cross {
+    @media screen and (max-width: 767px) {
+       & .icon-cross {
     display: none;
   }
   &.is-open .icon-cross {
@@ -56,7 +53,13 @@
   }
   &.is-open .icon-menu {
        display: none;
-     }
+     }  
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    
+  
 }
 
 .button-cross__icon {
@@ -69,10 +72,16 @@
 
 .menu-mobile {
   z-index: 4;
- @media screen and (min-width: 481px) and (max-width: 767px) {
+ @media screen and (max-width: 767px) {
     display: none;
+    // .button-menu.is-open + & {
+    //   display: block;
+    // }
+    &.is-open {
+      display: block;
+    }
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
    position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +102,7 @@
 }
 
 .nav-container {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 302px;
   }
   @media screen and (min-width: 768px) {
@@ -110,7 +119,7 @@
 }
 
 .nav__item {
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 767px){
   &:not(:last-child) {
 margin-bottom: 32px;
   }  
@@ -132,7 +141,7 @@ margin-bottom: 32px;
   &:focus {
     color: $accent-color-blue;
   }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       font-size: 40px;
         line-height: 1.18;
     }
@@ -152,7 +161,7 @@ margin-bottom: 32px;
     width: 100%;
     border-radius: 2px;
     background-image: url(../images/line-current.svg);
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -160,7 +169,7 @@ margin-bottom: 32px;
 }
 
 .contact {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column-reverse;
       gap: 32px;
@@ -177,7 +186,7 @@ margin-bottom: 32px;
 
 .contact__mail {
   @extend %contacts;
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
    font-size: 24px;
     line-height: 1.17;
 }
@@ -204,7 +213,7 @@ margin-bottom: 32px;
 .contact__icon {
   fill: currentColor;
   margin-right: 10px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -215,9 +224,10 @@ margin-bottom: 32px;
   &:focus {
     color: $accent-color-blue;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
    font-size: 34px;
   line-height: 1.18; 
+  color: $accent-color-blue;
   } 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -233,8 +243,10 @@ margin-bottom: 32px;
   @extend %list;
  display: flex;
  gap: 20px;
- 
-  @media screen and (min-width: 767px) { 
+ @media screen and (max-width: 480px) {
+  width: auto;
+ }
+  @media screen and (min-width: 768px) { 
 display: none;
   }
 }
@@ -259,5 +271,9 @@ display: none;
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
 }
-
+}
+.soc-list__link--after {
+  &::after {
+    display: none;
+  }
 }

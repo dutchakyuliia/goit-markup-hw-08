@@ -21,7 +21,7 @@
   text-transform: uppercase;
   color: $accent-color-white;
   @media screen and (max-width: 1199px){
-    width: 360px;
+    max-width: 360px;
     font-size: 26px;
       line-height: 1.62;
   }

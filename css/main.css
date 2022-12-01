@@ -247,19 +247,21 @@ p {
 .button-menu:hover, .button-menu:focus {
   color: #2196f3;
 }
+@media screen and (max-width: 767px) {
+  .button-menu .icon-cross {
+    display: none;
+  }
+  .button-menu.is-open .icon-cross {
+    display: block;
+  }
+  .button-menu.is-open .icon-menu {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .button-menu {
     display: none;
   }
-}
-.button-menu .icon-cross {
-  display: none;
-}
-.button-menu.is-open .icon-cross {
-  display: block;
-}
-.button-menu.is-open .icon-menu {
-  display: none;
 }
 
 .button-cross__icon {
@@ -274,12 +276,15 @@ p {
 .menu-mobile {
   z-index: 4;
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-mobile {
     display: none;
   }
+  .menu-mobile.is-open {
+    display: block;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .menu-mobile {
     position: absolute;
     top: 0;
@@ -309,7 +314,7 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-container {
     margin-bottom: 302px;
   }
@@ -334,7 +339,7 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -355,7 +360,7 @@ p {
 .nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__link {
     font-size: 40px;
     line-height: 1.18;
@@ -380,13 +385,13 @@ p {
   border-radius: 2px;
   background-image: url(../images/line-current.svg);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__link--current::after {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -410,7 +415,7 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact__mail {
     font-size: 24px;
     line-height: 1.17;
@@ -442,7 +447,7 @@ p {
   fill: currentColor;
   margin-right: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact__icon {
     display: none;
   }
@@ -451,10 +456,11 @@ p {
 .contact__tel:hover, .contact__tel:focus {
   color: #2196f3;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact__tel {
     font-size: 34px;
     line-height: 1.18;
+    color: #2196f3;
   }
 }
 @media screen and (min-width: 768px) {
@@ -476,7 +482,12 @@ p {
   display: flex;
   gap: 20px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 480px) {
+  .soc-list__contact {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
   .soc-list__contact {
     display: none;
   }
@@ -502,6 +513,10 @@ p {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
+.soc-list__link--after::after {
+  display: none;
+}
+
 .section-hero {
   padding: 200px 0;
   max-width: 1600px;
@@ -523,7 +538,7 @@ p {
 }
 @media screen and (max-width: 1199px) {
   .section-hero__title {
-    width: 360px;
+    max-width: 360px;
     font-size: 26px;
     line-height: 1.62;
   }
@@ -962,7 +977,6 @@ p {
 }
 
 .form-subscribe__input {
-  width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1022,10 +1036,25 @@ p {
 .form-subscribe__input:focus-within {
   outline: 1px solid #2196f3;
 }
+@media screen and (max-width: 480px) {
+  .form-subscribe__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-subscribe__input {
+    min-width: 450px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .form-subscribe__input {
+    max-width: 450px;
     margin-bottom: 20px;
-    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-subscribe__input {
+    width: 358px;
   }
 }
 

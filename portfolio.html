@@ -24,10 +24,11 @@
           ><span class="logo__part">Web</span>Studio</a
         >
         <button
-          class="button-menu is-open"
+          class="button-menu"
           type="button"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="menu-container"
+          data-menu-button
         >
           <svg
             class="button-cross__icon"
@@ -45,16 +46,16 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-mobile">
+        <div class="menu-mobile" id="menu-container" data-menu>
           <nav class="nav-container">
             <ul class="nav">
               <li class="nav__item">
-                <a class="nav__link" href="./index.html">Студія </a>
+                <a class="nav__link nav__link--current" href="./index.html"
+                  >Студія
+                </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./portfolio.html"
-                  >Портфоліо</a
-                >
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="">Контакти</a>
@@ -85,7 +86,9 @@
               <a href="" class="soc-list__link"> Facebook</a>
             </li>
             <li class="soc-list__item">
-              <a href="" class="soc-list__link"> LinkedIn</a>
+              <a href="" class="soc-list__link soc-list__link--after">
+                LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -421,5 +424,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
