@@ -45,31 +45,49 @@
             ></use>
           </svg>
         </button>
-        <nav class="nav-container">
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія </a>
+        <div class="menu-mobile">
+          <nav class="nav-container">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Студія </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact">
+            <a class="contact__mail" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="contact__tel" href="tel:+380961111111"
+              ><svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </div>
+          <ul class="soc-list__contact">
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link"> Instagram</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html"
-                >Портфоліо</a
-              >
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link"> Twitter</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link"> Facebook</a>
+            </li>
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link"> LinkedIn</a>
+            </li>
           </ul>
-        </nav>
-        <div class="contact">
-          <a class="contact__mail" href="mailto:info@devstudio.com">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg.svg#icon-envelope-hover"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-          <a class="contact__tel" href="tel:+380961111111"
-            ><svg class="contact__icon" width="10" height="16">
-              <use href="./images/icons.svg.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
         </div>
       </div>
     </header>
@@ -122,7 +140,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="project__bottom">
+                <div class="project__bottom project__bottom--padding">
                   <h2 class="project__title">Технокряк</h2>
                   <p class="project__type">Веб-сайт</p>
                 </div>
@@ -312,68 +330,70 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="address-wrap">
-          <a class="logo footer__logo" href=""
-            ><span class="logo__part">Web</span>Studio</a
-          >
-          <address class="address">
-            <a
-              class="address__place"
-              href="https://goo.gl/maps/ZFxjsb6pWnwrwmAYA"
-              >м. Київ, пр-т Лесі Українки, 26</a
+        <div class="address-join-wrap">
+          <div class="address-wrap">
+            <a class="logo footer__logo" href=""
+              ><span class="logo__part">Web</span>Studio</a
             >
-            <a class="address__mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="address__tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="join-us">
-          <p class="join-us__title">приєднуйтесь</p>
-          <ul class="soc-list join-us__soc-list">
-            <li class="soc-list__item">
+            <address class="address">
               <a
-                class="soc-list__icon-box soc-list__icon-box--background"
-                href=""
+                class="address__place"
+                href="https://goo.gl/maps/ZFxjsb6pWnwrwmAYA"
+                >м. Київ, пр-т Лесі Українки, 26</a
               >
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a
-                class="soc-list__icon-box soc-list__icon-box--background"
-                href=""
+              <a class="address__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a
-                class="soc-list__icon-box soc-list__icon-box--background"
-                href=""
+              <a class="address__tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
               >
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a
-                class="soc-list__icon-box soc-list__icon-box--background"
-                href=""
-              >
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            </address>
+          </div>
+          <div class="join-us">
+            <p class="join-us__title">приєднуйтесь</p>
+            <ul class="soc-list join-us__soc-list">
+              <li class="soc-list__item">
+                <a
+                  class="soc-list__icon-box soc-list__icon-box--background"
+                  href=""
+                >
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a
+                  class="soc-list__icon-box soc-list__icon-box--background"
+                  href=""
+                >
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a
+                  class="soc-list__icon-box soc-list__icon-box--background"
+                  href=""
+                >
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a
+                  class="soc-list__icon-box soc-list__icon-box--background"
+                  href=""
+                >
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form
           class="form-subscribe"

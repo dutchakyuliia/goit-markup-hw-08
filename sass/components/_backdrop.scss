@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 8;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
   }
      @media screen and (min-width: 1200px) {
@@ -167,18 +167,24 @@
 
 .checkbox__label {
   display: flex;
+  align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: $primary-text-color;
   margin-bottom: 0;
+  @media screen and (max-width: 1199px) {
+font-size: 12px;
+  line-height: 1.17;
+  }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+  line-height: 1.71;}
 }
 
 .checkbox__icon-box {
   position: absolute;
-  left: -10px;
-  top: 3px;
+      left: -10px;
+        top: 7px;
   display: flex;
   align-items: center;
   width: 16px;
@@ -187,6 +193,9 @@
   border: 2px solid #000000;
   color: $accent-color-white;
   background-color: $accent-color-white;
+
+  
+   
 }
 
 .checkbox__icon {
@@ -195,13 +204,20 @@
 
 .checkbox__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: $accent-color-blue;
   text-decoration-line: underline;
   margin-left: 4px;
-}
+
+  @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+}}
 
 .button--submit {
   width: 200px;

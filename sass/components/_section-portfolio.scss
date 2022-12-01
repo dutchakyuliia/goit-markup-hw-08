@@ -36,7 +36,6 @@ justify-content: flex-start;
      @media screen and (min-width: 768px) {
  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
      }
 }
@@ -46,6 +45,10 @@ justify-content: flex-start;
       margin-bottom: 30px;
     }
   }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 2);
+     
+    }
 }
 .project {
   color: $primary-text-color;
@@ -91,7 +94,11 @@ justify-content: flex-start;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-
+.project__bottom--padding {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px 24px 56px 24px;
+    }
+}
 .project__title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -103,5 +110,5 @@ justify-content: flex-start;
 
 .project__type {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.88; 
 }

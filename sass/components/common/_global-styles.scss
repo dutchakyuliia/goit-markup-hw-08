@@ -59,7 +59,7 @@ p {
 }
 
 .section {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -74,7 +74,7 @@ p {
   font-weight: 700;
   color: $title-text-color;
   text-align: center;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
 font-size: 28px;
   line-height: 1.18;
   margin-bottom: 30px;

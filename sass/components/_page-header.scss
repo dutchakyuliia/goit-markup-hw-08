@@ -17,7 +17,10 @@
 .page-header__logo {
  
   @media screen and (min-width: 768px) {
-  margin-right: 93px;}
+  margin-right: 87px;}
+    @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+    }
 }
 
 .logo__part {
@@ -29,6 +32,7 @@
   top: 50%;
     right: 0;
     transform: translateY( -50%);
+    z-index: 5;
     width: 40px;
     height: 40px;
     border: none;
@@ -64,6 +68,7 @@
 }
 
 .menu-mobile {
+  z-index: 4;
  @media screen and (min-width: 481px) and (max-width: 767px) {
     display: none;
   }
@@ -78,10 +83,12 @@
   }
  @media screen and (min-width: 768px) {
   display: flex;
+  align-items: center;
   gap: 96px;
  }
  @media screen and (min-width: 1200px) {
    display: flex;
+  gap: 320px;
  }
 }
 
@@ -98,7 +105,7 @@
   @extend %list;
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 50px;
+    gap: 51px;
   }
 }
 
@@ -153,20 +160,19 @@ margin-bottom: 32px;
 }
 
 .contact {
-  // @media screen and (max-width: 767px) {
-  //     display: none;
-  //   }
     @media screen and (max-width: 480px) {
       display: flex;
       flex-direction: column-reverse;
       gap: 32px;
       margin-bottom: 64px;
     }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  @media screen and (min-width: 768px) { 
   }
+     @media screen and (min-width: 1200px) {
+       display: flex;
+       align-items: center;
+
+     }
 }
 
 .contact__mail {
@@ -175,9 +181,18 @@ margin-bottom: 32px;
    font-size: 24px;
     line-height: 1.17;
 }
+@media screen and (min-width: 768px) {
+  font-size: 12px;
+    line-height: 1.17; 
+}
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-bottom: 10px;
  
+ }
     @media screen and (min-width: 1200px) {
-      margin-right: 50px;
+      font-size: 14px;
+        line-height: 1.14;
+      margin-right: 30px;
     }
   &:hover,
   &:focus {
@@ -204,6 +219,14 @@ margin-bottom: 32px;
    font-size: 34px;
   line-height: 1.18; 
   } 
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+        line-height: 1.17;
+    }
+         @media screen and (min-width: 1200px) {
+           font-size: 14px;
+           line-height: 1.14;
+         }
 }
 
 .soc-list__contact {
