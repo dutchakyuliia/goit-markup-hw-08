@@ -154,10 +154,20 @@ p {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: #000000;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .soc-list {
@@ -702,7 +712,7 @@ p {
 .team-set__item {
   margin: 0 auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-set__item {
     width: 100%;
   }
@@ -868,11 +878,12 @@ p {
 }
 
 .footer__logo {
+  display: block;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .address {
-  margin-top: 20px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -911,6 +922,11 @@ p {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .join-us {
+    margin-right: 93px;
+  }
+}
 
 .join-us__title {
   margin-bottom: 20px;
@@ -922,9 +938,6 @@ p {
   color: #ffffff;
 }
 
-.join-us__soc-list {
-  margin-right: 93px;
-}
 @media screen and (max-width: 767px) {
   .join-us__soc-list {
     display: -webkit-box;
@@ -978,7 +991,6 @@ p {
 
 .form-subscribe__input {
   padding: 15px 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1043,18 +1055,19 @@ p {
 }
 @media screen and (min-width: 480px) {
   .form-subscribe__input {
-    min-width: 450px;
+    width: 450px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1199px) {
   .form-subscribe__input {
-    max-width: 450px;
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form-subscribe__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
