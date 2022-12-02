@@ -1,15 +1,73 @@
 .section-hero {
-  padding: 200px 0;
-  max-width: 1600px;
   margin: 0 auto;
+  padding: 118px 0;
+  width: 480px;
+  height: 400px;
+  background-size: 480px 400px;
   background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
-  background-repeat: no-repeat;
+    url(../images/hero-mobile-1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet-1x.jpg);
+    width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    @media (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desktop-1x.jpg);
+    padding: 200px 0;
+      width: 1600px;
+    height: 600px;
+    background-size: 1600px 600px;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desktop-2x.jpg);
+    }
+  }
 }
 
 .section-hero__title {
@@ -20,20 +78,20 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $accent-color-white;
-  @media screen and (max-width: 1199px){
+  @media screen and (max-width: 1199px) {
     max-width: 360px;
     font-size: 26px;
-      line-height: 1.62;
+    line-height: 1.62;
   }
-    @media screen and (min-width: 1200px) {
-      width: 696px;
-font-size: 44px;
-  line-height: 1.36;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button--modal {
-  min-width: 216px;
+  min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
