@@ -530,10 +530,8 @@ p {
 .section-hero {
   margin: 0 auto;
   padding: 118px 0;
-  width: 480px;
-  height: 400px;
-  background-size: 480px 400px;
   background-color: #c4c4c4;
+  background-size: 480px 400px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-1x.jpg);
@@ -549,8 +547,6 @@ p {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet-1x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-1x.jpg);
-    width: 768px;
-    height: 400px;
     background-size: 768px 400px;
   }
 }
@@ -565,8 +561,6 @@ p {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop-1x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-1x.jpg);
     padding: 200px 0;
-    width: 1600px;
-    height: 600px;
     background-size: 1600px 600px;
     margin: 0 auto;
   }
