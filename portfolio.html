@@ -26,6 +26,7 @@
         <button
           class="button-menu"
           type="button"
+          aria-label="Переключатель мобільного меню"
           aria-expanded="false"
           aria-controls="menu-container"
           data-menu-button
@@ -38,10 +39,12 @@
           >
             <use
               class="icon-cross"
+              aria-label="Закриває мобільне меню"
               href="./images/icons.svg.svg#icon-close-modal"
             ></use>
             <use
               class="icon-menu"
+              aria-label="Відкриває мобільне меню"
               href="./images/icons.svg.svg#icon-menu"
             ></use>
           </svg>
@@ -596,7 +599,11 @@
               placeholder="E-mail"
               id="user_email"
             />
-            <button class="button button--subscribe" type="submit">
+            <button
+              class="button button--subscribe"
+              type="submit"
+              aria-label="Підписатися"
+            >
               Підписатися
               <svg class="button__icon" width="24" height="24">
                 <use href="./images/icons.svg.svg#icon-subscribe"></use>
