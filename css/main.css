@@ -821,8 +821,8 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
