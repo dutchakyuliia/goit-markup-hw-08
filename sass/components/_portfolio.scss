@@ -1,15 +1,19 @@
 .filter__list {
   @extend %list;
-   display: flex;
+  display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
   @media screen and (max-width: 767px) {
-flex-wrap: wrap;
-justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 60px;
   }
-    
+
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
   }
+}
 
 .button--portfolio {
   padding: 6px 25px;
@@ -33,11 +37,11 @@ justify-content: flex-start;
 
 .grid {
   @extend %list;
-     @media screen and (min-width: 768px) {
- display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-     }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .grid__item {
   @media screen and (max-width: 767px) {
@@ -45,10 +49,9 @@ justify-content: flex-start;
       margin-bottom: 30px;
     }
   }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 60px) / 2);
-     
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 60px) / 2);
+  }
 }
 .project {
   color: $primary-text-color;
@@ -59,12 +62,11 @@ justify-content: flex-start;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
- @media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
- }
-
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .project__overlay {
@@ -113,5 +115,5 @@ justify-content: flex-start;
 
 .project__type {
   font-size: 16px;
-  line-height: 1.88; 
+  line-height: 1.88;
 }

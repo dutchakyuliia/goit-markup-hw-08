@@ -4,28 +4,27 @@
 
 .team-set {
   @extend %list;
-  @media screen and (min-width: 768px){
-   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
-.team-set__item{
+.team-set__item {
   margin: 0 auto;
-@media screen and (max-width: 767px) {
- width: 100%; 
- &:not(:last-child){
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-width: 354px;
-}
-
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 
 .team-set__card {
@@ -43,8 +42,7 @@ width: 354px;
   line-height: 1.19;
   color: $title-text-color;
   text-align: center;
-
- }
+}
 
 .team-set__work-title {
   margin-bottom: 16px;
@@ -58,5 +56,5 @@ width: 354px;
   text-align: center;
   display: flex;
   justify-content: center;
- padding-bottom: 30px;
+  padding-bottom: 30px;
 }

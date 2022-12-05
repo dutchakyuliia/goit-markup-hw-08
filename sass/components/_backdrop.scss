@@ -29,14 +29,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
   @media screen and (max-width: 479px) {
-    max-width: 350px;
+    max-width: 370px;
   }
   @media screen and (max-width: 1199px) {
     width: 450px;
   }
-     @media screen and (min-width: 1200px) {
-       width: 528px;
-     }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .button-cross__modal {
@@ -69,6 +69,9 @@
   display: flex;
   flex-direction: column;
   padding: 40px 40px;
+  @media screen and (max-width: 479px) {
+    padding: 30px 30px;
+  }
 }
 
 .modal-form__title {
@@ -82,7 +85,7 @@
   margin-bottom: 12px;
   @media screen and (min-width: 1200px) {
     font-size: 20px;
-      line-height: 1.15;
+    line-height: 1.15;
   }
 }
 
@@ -131,7 +134,6 @@
   }
 }
 
-
 .modal-form__textarea {
   margin-bottom: 20px;
   width: 100%;
@@ -175,19 +177,25 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+
   @media screen and (max-width: 1199px) {
-font-size: 12px;
-  line-height: 1.17;
+    font-size: 12px;
+    line-height: 1.17;
   }
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-  line-height: 1.71;}
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon-box {
   position: absolute;
-      left: -10px;
-        top: 7px;
+  left: -10px;
+  top: 7px;
   display: flex;
   align-items: center;
   width: 16px;
@@ -210,14 +218,18 @@ font-size: 12px;
   margin-left: 4px;
 
   @media screen and (max-width: 1199px) {
-      font-size: 12px;
-      line-height: 1.17;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 1.71;
-}}
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .button--submit {
   width: 200px;
