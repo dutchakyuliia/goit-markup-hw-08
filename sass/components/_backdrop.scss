@@ -24,13 +24,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
   background-color: $backgroud-color;
-
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
-
+  @media screen and (max-width: 479px) {
+    max-width: 350px;
+  }
   @media screen and (max-width: 1199px) {
     width: 450px;
   }
@@ -74,12 +74,16 @@
 .modal-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
   padding-top: 2px;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+      line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -171,7 +175,6 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   color: $primary-text-color;
-  margin-bottom: 0;
   @media screen and (max-width: 1199px) {
 font-size: 12px;
   line-height: 1.17;
@@ -193,9 +196,6 @@ font-size: 12px;
   border: 2px solid #000000;
   color: $accent-color-white;
   background-color: $accent-color-white;
-
-  
-   
 }
 
 .checkbox__icon {

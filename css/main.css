@@ -5,20 +5,22 @@
 }
 
 .contact__tel, .contact__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .contact__tel, .contact__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__tel, .contact__mail {
@@ -198,7 +200,6 @@ p {
   fill: currentColor;
 }
 .page-header {
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -219,8 +220,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -290,19 +289,14 @@ p {
 @media screen and (max-width: 767px) {
   .menu-mobile {
     display: none;
-  }
-  .menu-mobile.is-open {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu-mobile {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: #ffffff;
-    padding: 48px 40px;
+    padding: 48px 84px 48px 40px;
+  }
+  .menu-mobile.is-open {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -487,15 +481,13 @@ p {
   }
 }
 
-.soc-list__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-}
 @media screen and (max-width: 767px) {
   .soc-list__contact {
-    max-width: 767px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    max-width: 356px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -537,6 +529,11 @@ p {
   background-position: 50% 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-1x.jpg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-1x.jpg);
+}
+@media screen and (max-width: 768px) {
+  .section-hero {
+    max-width: 480px;
+  }
 }
 @media (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
@@ -1168,6 +1165,11 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 350px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
@@ -1220,12 +1222,18 @@ p {
 .modal-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   padding-top: 2px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -1353,7 +1361,6 @@ p {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 0;
 }
 @media screen and (max-width: 1199px) {
   .checkbox__label {
@@ -1499,6 +1506,18 @@ p {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
 
 .project__overlay {
   position: relative;
@@ -1536,12 +1555,9 @@ p {
 .project__bottom {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project__bottom--padding {
-    padding: 20px 24px 56px 24px;
-  }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .project__title {
