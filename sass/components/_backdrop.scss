@@ -175,6 +175,11 @@
     border: 2px solid $accent-color-blue;
     
   }
+  @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 0;
+        top: 16px;
+  }
 }
 
 .checkbox__label {
