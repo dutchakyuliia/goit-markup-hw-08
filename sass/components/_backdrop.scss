@@ -162,12 +162,18 @@
   display: flex;
   align-items: center;
   padding: 0 12px 0 11px;
-  margin: 0 auto;
   margin-bottom: 30px;
-  &:checked + .checkbox__icon-box {
+  
+}
+.checkbox__input {
+  position: absolute;
+    left: 0;
+    top: 11px;
+  transition: background-color 250ms $timing-function;
+ &:checked + .checkbox__icon-box {
     background-color: $accent-color-blue;
     border: 2px solid $accent-color-blue;
-    transition: background-color 250ms $timing-function;
+    
   }
 }
 
@@ -195,7 +201,7 @@
 .checkbox__icon-box {
   position: absolute;
   left: -10px;
-  top: 7px;
+  top: -2px;
   display: flex;
   align-items: center;
   width: 16px;
@@ -204,6 +210,11 @@
   border: 2px solid #000000;
   color: $accent-color-white;
   background-color: $accent-color-white;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+      left: -10px;
+      top: 3px;
+  }
 }
 
 .checkbox__icon {
