@@ -32,68 +32,80 @@
           data-menu-button
         >
           <svg
-            class="button-cross__icon"
+            class="button-menu__svg"
             width="40"
             height="40"
             aria-label="Переключатель мобільного меню"
           >
             <use
-              class="icon-cross"
               aria-label="Закриває мобільне меню"
+              class="icon-cross"
               href="./images/icons.svg.svg#icon-close-modal"
             ></use>
             <use
-              class="icon-menu"
               aria-label="Відкриває мобільне меню"
+              class="icon-menu"
               href="./images/icons.svg.svg#icon-menu"
             ></use>
           </svg>
         </button>
         <div class="menu-mobile" id="menu-container" data-menu>
-          <nav class="nav-container">
-            <ul class="nav">
-              <li class="nav__item">
-                <a class="nav__link" href="./index.html">Студія </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./portfolio.html"
-                  >Портфоліо</a
+          <div class="container menu-mobile__container">
+            <div class="menu-mobile-top">
+              <nav class="nav-container">
+                <ul class="nav">
+                  <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Студія </a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link nav__link--current"
+                      href="./portfolio.html"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-mobile-bottom">
+              <div class="contact">
+                <a class="contact__mail" href="mailto:info@devstudio.com">
+                  <svg class="contact__icon" width="16" height="12">
+                    <use
+                      href="./images/icons.svg.svg#icon-envelope-hover"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="contact">
-            <a class="contact__mail" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-            <a class="contact__tel" href="tel:+380961111111"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
+                <a class="contact__tel" href="tel:+380961111111"
+                  ><svg class="contact__icon" width="10" height="16">
+                    <use
+                      href="./images/icons.svg.svg#icon-smartphone"
+                    ></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </div>
+              <ul class="soc-list__contact">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"> Instagram</a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"> Twitter</a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"> Facebook</a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link soc-list__link--after">
+                    LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="soc-list__contact">
-            <li class="soc-list__item">
-              <a href="" class="soc-list__link"> Instagram</a>
-            </li>
-            <li class="soc-list__item">
-              <a href="" class="soc-list__link"> Twitter</a>
-            </li>
-            <li class="soc-list__item">
-              <a href="" class="soc-list__link"> Facebook</a>
-            </li>
-            <li class="soc-list__item">
-              <a href="" class="soc-list__link soc-list__link--after">
-                LinkedIn</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </header>

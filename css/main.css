@@ -154,6 +154,10 @@ p {
   background-color: #188ce8;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -297,6 +301,8 @@ p {
     position: fixed;
     top: 0;
     right: 0;
+    width: 100vw;
+    height: 100vh;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -309,6 +315,20 @@ p {
     background-color: #ffffff;
     padding: 48px 84px 48px 40px;
   }
+  .menu-mobile > .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: auto;
+  }
   .menu-mobile.is-open {
     display: block;
     opacity: 1;
@@ -319,13 +339,13 @@ p {
   }
 }
 @media screen and (max-width: 479px) {
-  .menu-mobile {
+  .menu-mobile__container {
     padding: 48px 25px 86px 30px;
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-mobile {
+  .menu-mobile__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,7 +356,7 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
-  .menu-mobile {
+  .menu-mobile__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -344,16 +364,6 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav-container {
-    margin-bottom: 302px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .nav-container {
-    margin-bottom: 240px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav-container {
     display: -webkit-box;
@@ -1201,13 +1211,14 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0 15px;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {

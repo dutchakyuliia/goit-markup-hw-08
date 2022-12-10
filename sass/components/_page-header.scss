@@ -79,6 +79,8 @@
     position: fixed;
     top: 0;
     right: 0;
+    width: 100vw;
+      height: 100vh;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -87,6 +89,14 @@
       visibility 250ms $timing-function, transform 250ms $timing-function;
     background-color: $backgroud-color;
     padding: 48px 84px 48px 40px;
+   >.container {
+   height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: auto; 
+   }
+    
     &.is-open {
       display: block;
       opacity: 1;
@@ -95,6 +105,7 @@
       transform: scale(1);
     }
   }
+    &__container {
   @media screen and (max-width: 479px) {
     padding: 48px 25px 86px 30px;
     width: 100%;
@@ -110,14 +121,9 @@
     gap: 320px;
   }
 }
+}
 
 .nav-container {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
-  @media screen and (max-width: 479px) {
-    margin-bottom: 240px;
-  }
   @media screen and (min-width: 768px) {
     @include centeredFlex();
   }
