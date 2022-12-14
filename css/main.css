@@ -295,27 +295,26 @@ p {
 .menu-mobile {
   z-index: 4;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .menu-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #ffffff;
+    width: 100%;
+  }
+}
+.menu-mobile__container {
+  padding: 48px 20px 86px 20px;
+}
+@media screen and (max-width: 479px) {
+  .menu-mobile__container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .menu-mobile__container {
     padding: 48px 84px 48px 40px;
   }
-  .menu-mobile > .container {
+}
+@media screen and (max-width: 767px) {
+  .menu-mobile__container {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -328,20 +327,6 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     overflow: auto;
-  }
-  .menu-mobile.is-open {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@media screen and (max-width: 479px) {
-  .menu-mobile__container {
-    padding: 48px 25px 86px 30px;
-    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -361,6 +346,34 @@ p {
     display: -ms-flexbox;
     display: flex;
     gap: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #ffffff;
+  }
+  .menu-mobile.is-open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -564,7 +577,7 @@ p {
 }
 @media screen and (max-width: 479px) {
   .soc-list__link {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.22;
   }
 }
