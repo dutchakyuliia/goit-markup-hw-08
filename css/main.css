@@ -300,15 +300,13 @@ p {
     width: 100%;
   }
 }
-.menu-mobile__container {
-  padding: 48px 20px 86px 20px;
-}
 @media screen and (max-width: 479px) {
   .menu-mobile__container {
     width: 100%;
+    padding: 48px 20px 86px 20px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-mobile__container {
     padding: 48px 84px 48px 40px;
   }
